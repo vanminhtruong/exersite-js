@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra số nguyên tố và số hoàn hảo</title>
+    <style>
+        /* Đặt phong cách cơ bản cho toàn bộ trang */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Gradient nền */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container chính */
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Bóng đổ mờ */
+            transition: transform 0.3s ease; /* Hiệu ứng khi hover */
+        }
+
+        /* Hiệu ứng hover cho container */
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        /* Tiêu đề */
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Input số */
+        input[type="number"] {
+            width: 95%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #007bff; /* Đường viền xanh */
+            border-radius: 8px;
+            transition: border-color 0.3s; /* Hiệu ứng khi hover */
+        }
+
+        /* Hiệu ứng khi hover trên input */
+        input[type="number"]:focus {
+            border-color: #0056b3; /* Đổi màu đường viền khi focus */
+            outline: none; /* Ẩn outline */
+        }
+
+        /* Nút kiểm tra */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff; /* Nền xanh */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng chuyển đổi */
+        }
+
+        /* Hiệu ứng khi hover trên nút */
+        button:hover {
+            background-color: #0056b3; /* Tối màu nền khi hover */
+            transform: translateY(-2px); /* Nâng nút lên khi hover */
+        }
+
+        /* Kết quả hiển thị */
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+            transition: opacity 0.3s; /* Hiệu ứng mờ dần */
+        }
+
+        /* Hiệu ứng cho kết quả */
+        #result.show {
+            opacity: 1; /* Hiển thị kết quả */
+        }
+
+        #result.hide {
+            opacity: 0; /* Ẩn kết quả */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Kiểm tra số nguyên tố và số hoàn hảo</h1>
+        <input type="number" id="numberInput" placeholder="Nhập một số">
+        <button id="checkButton">Kiểm tra</button>
+        <div id="result"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
