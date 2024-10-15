@@ -22,7 +22,7 @@ class StringProcessor {
     }
 }
 
-// Class WordProcessor chịu trách nhiệm xử lý mảng từ
+// Class WordProcessor chịu trách nhiệm xử lý mảng 
 class WordProcessor {
     constructor(str) {
         this.str = str;
@@ -31,7 +31,7 @@ class WordProcessor {
     // Tạo mảng từ đã xử lý
     getProcessedWords() {
         if (this.str === "") {
-        return [];
+            return [];
         }
         return this.str.split(' ')
         .map(word => this.capitalizeFirstLetter(word))

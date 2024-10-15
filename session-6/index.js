@@ -33,7 +33,7 @@ class CarCollection {
     }
 }
 
-// Function to transform input array into Car objects and group them
+// Hàm chuyển đổi mảng đầu vào thành các đối tượng Car và nhóm chúng lại
 function transformAndGroupCars(inputArray) {
     const carCollection = new CarCollection();
     
