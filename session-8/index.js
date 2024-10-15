@@ -20,4 +20,5 @@ function deepClone(obj) {
 }
 
 let man = deepClone(Man);
+console.log(Man);
 console.log(man);
